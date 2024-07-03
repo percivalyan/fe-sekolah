@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Blank</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Mata Pelajaran -->
+            <li class="nav-item">
+                <a class="nav-link" href="matkul.html">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Mata Pelajaran</span></a>
+            </li>
+
+            <!-- Nav Item - Bahan Ajar -->
+            <li class="nav-item">
+                <a class="nav-link" href="bahan-ajar.html">
+                    <i class="fas fa-fw fa-file-alt"></i>
+                    <span>Bahan Ajar</span></a>
+            </li>
+
+            <!-- Nav Item - Jadwal Pelajaran -->
+            <li class="nav-item">
+                <a class="nav-link" href="jadwal-pelajaran.html">
+                    <i class="fas fa-fw fa-calendar"></i>
+                    <span>Jadwal Pelajaran</span></a>
+            </li>
+
+            <!-- Nav Item - Prestasi Akademik -->
+            <li class="nav-item">
+                <a class="nav-link" href="prestasi-akademik.html">
+                    <i class="fas fa-fw fa-trophy"></i>
+                    <span>Prestasi Akademik</span></a>
+            </li>
+
+            <!-- Nav Item - Silabus -->
+            <li class="nav-item">
+                <a class="nav-link" href="silabus.html">
+                    <i class="fas fa-fw fa-list"></i>
+                    <span>Silabus</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!</div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                
+                    <!-- Section: Prestasi Akademik -->
+                    <section id="prestasi-akademik">
+                        <div class="container mt-5">
+                            <h1>Create Bahan Ajar</h1>
+                            <form id="bahanAjarForm" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="judul">Judul:</label>
+                                    <input type="text" class="form-control" id="judul" name="judul" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="deskripsi">Deskripsi:</label>
+                                    <textarea class="form-control" id="deskripsi" name="deskripsi" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipe">Tipe:</label>
+                                    <input type="text" class="form-control" id="tipe" name="tipe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="idMapel">Mata Pelajaran:</label>
+                                    <select class="form-control" id="idMapel" name="id_mapel" required>
+                                        <option value="" disabled selected>Pilih Mata Pelajaran</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="file">File PDF:</label>
+                                    <input type="file" class="form-control-file" id="file" name="file" accept="application/pdf" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Create</button>
+                                    <button type="button" id="cancelEdit" class="btn btn-secondary" style="display: none;">Cancel</button>
+                                </div>
+                            </form>
+                        
+                            <h2 class="mt-5">Daftar Bahan Ajar</h2>
+                            <table class="table table-bordered" id="bahanAjarTable">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Judul</th>
+                                        <th>Deskripsi</th>
+                                        <th>Tipe</th>
+                                        <th>Mata Pelajaran</th>
+                                        <th>File Type</th>
+                                        <th>Preview</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Rows will be populated here by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- End Section: Prestasi Akademik -->
+                
+                </div>
+                
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <script>
+           let mataPelajaranList = [];
+
+        async function fetchMataPelajaran() {
+            try {
+                const response = await fetch('http://localhost:8080/api/mata-pelajaran', {
+                    method: 'GET'
+                });
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const data = await response.json();
+                mataPelajaranList = data; // Store the Mata Pelajaran data
+                return data;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                alert('Failed to fetch Mata Pelajaran data');
+                return [];
+            }
+        }
+
+        async function renderMataPelajaranOptions(selectedId = null) {
+            const select = document.getElementById('idMapel');
+
+            select.innerHTML = ''; // Clear previous options
+
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.disabled = true;
+            defaultOption.selected = true;
+            defaultOption.textContent = 'Pilih Mata Pelajaran';
+            select.appendChild(defaultOption);
+
+            mataPelajaranList.forEach(mataPelajaran => {
+                const option = document.createElement('option');
+                option.value = mataPelajaran.id;
+                option.textContent = `${mataPelajaran.kodeMapel} - ${mataPelajaran.namaMapel}`;
+                if (selectedId && selectedId === mataPelajaran.id) {
+                    option.selected = true;
+                }
+                select.appendChild(option);
+            });
+        }
+        
+
+        async function fetchBahanAjar() {
+            try {
+                const response = await fetch('http://localhost:8080/api/bahan-ajar/all');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                alert('Failed to fetch Bahan Ajar data');
+                return [];
+            }
+        }
+
+        async function renderBahanAjarTable() {
+            const bahanAjarList = await fetchBahanAjar();
+            const tableBody = document.getElementById('bahanAjarTable').getElementsByTagName('tbody')[0];
+
+            tableBody.innerHTML = ''; // Clear previous rows
+
+            bahanAjarList.forEach(bahanAjar => {
+                const row = tableBody.insertRow();
+
+                const cellJudul = row.insertCell(0);
+                cellJudul.textContent = bahanAjar.judul;
+
+                const cellDeskripsi = row.insertCell(1);
+                cellDeskripsi.textContent = bahanAjar.deskripsi;
+
+                const cellTipe = row.insertCell(2);
+                cellTipe.textContent = bahanAjar.tipe;
+
+                const cellMataPelajaran = row.insertCell(3);
+                cellMataPelajaran.textContent = `${bahanAjar.mataPelajaran.kodeMapel} - ${bahanAjar.mataPelajaran.namaMapel}`;
+
+                const cellFileType = row.insertCell(4);
+                cellFileType.textContent = bahanAjar.fileType;
+
+                const cellPreview = row.insertCell(5);
+                const previewLink = document.createElement('a');
+                previewLink.href = `http://localhost:8080/api/bahan-ajar/file/${bahanAjar.id}`;
+                previewLink.textContent = 'Preview';
+                previewLink.target = '_blank';
+                cellPreview.appendChild(previewLink);
+
+                // Action buttons
+                const cellAction = row.insertCell(6);
+                const editButton = document.createElement('button');
+                editButton.textContent = 'Edit';
+                editButton.addEventListener('click', () => editBahanAjar(bahanAjar.id)); // Call edit function with id
+                cellAction.appendChild(editButton);
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', () => deleteBahanAjar(bahanAjar.id)); // Call delete function with id
+                cellAction.appendChild(deleteButton);
+            });
+        }
+
+        async function editBahanAjar(id) {
+            try {
+                const response = await fetch(`http://localhost:8080/api/bahan-ajar/${id}`);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch Bahan Ajar data for editing');
+                }
+                const bahanAjar = await response.json();
+
+                // Populate form fields with fetched data
+                document.getElementById('judul').value = bahanAjar.judul;
+                document.getElementById('deskripsi').value = bahanAjar.deskripsi;
+                document.getElementById('tipe').value = bahanAjar.tipe;
+
+                // Render Mata Pelajaran options with the selected Mata Pelajaran
+                await renderMataPelajaranOptions(bahanAjar.mataPelajaran.id);
+
+                // Update the form action to indicate editing mode
+                document.getElementById('bahanAjarForm').setAttribute('data-id', id);
+                document.getElementById('cancelEdit').style.display = 'inline-block';
+                document.getElementById('bahanAjarForm').removeEventListener('submit', createBahanAjar);
+                document.getElementById('bahanAjarForm').addEventListener('submit', updateBahanAjar);
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to fetch Bahan Ajar data for editing');
+            }
+        }
+
+        async function deleteBahanAjar(id) {
+            if (confirm('Are you sure you want to delete this item?')) {
+                try {
+                    const response = await fetch(`http://localhost:8080/api/bahan-ajar/delete/${id}`, {
+                        method: 'DELETE'
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Failed to delete Bahan Ajar');
+                    }
+
+                    alert('Bahan Ajar deleted successfully');
+                    renderBahanAjarTable(); // Refresh the table data
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('Failed to delete Bahan Ajar');
+                }
+            }
+        }
+
+        async function updateBahanAjar(event) {
+            event.preventDefault();
+
+            const id = document.getElementById('bahanAjarForm').getAttribute('data-id');
+
+            const formData = new FormData();
+            formData.append('judul', document.getElementById('judul').value);
+            formData.append('deskripsi', document.getElementById('deskripsi').value);
+            formData.append('tipe', document.getElementById('tipe').value);
+            formData.append('id_mapel', document.getElementById('idMapel').value);
+            formData.append('file', document.getElementById('file').files[0]);
+
+            try {
+                const response = await fetch(`http://localhost:8080/api/bahan-ajar/update/${id}`, {
+                    method: 'PUT',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to update Bahan Ajar');
+                }
+
+                const data = await response.text();
+                alert(data);
+                renderBahanAjarTable(); // Refresh the table data
+                document.getElementById('bahanAjarForm').reset(); // Reset the form
+                document.getElementById('bahanAjarForm').removeAttribute('data-id'); // Remove editing mode
+                document.getElementById('cancelEdit').style.display = 'none'; // Hide cancel button
+                document.getElementById('bahanAjarForm').removeEventListener('submit', updateBahanAjar);
+                document.getElementById('bahanAjarForm').addEventListener('submit', createBahanAjar);
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to update Bahan Ajar');
+            }
+        }
+
+        async function createBahanAjar(event) {
+            event.preventDefault();
+
+            const formData = new FormData();
+            formData.append('judul', document.getElementById('judul').value);
+            formData.append('deskripsi', document.getElementById('deskripsi').value);
+            formData.append('tipe', document.getElementById('tipe').value);
+            formData.append('id_mapel', document.getElementById('idMapel').value);
+            formData.append('file', document.getElementById('file').files[0]);
+
+            try {
+                const response = await fetch('http://localhost:8080/api/bahan-ajar/create', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to create Bahan Ajar');
+                }
+
+                const data = await response.text();
+                alert(data);
+                renderBahanAjarTable(); // Refresh the table data
+                this.reset(); // Reset the form after submission
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to create Bahan Ajar');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', async function() {
+            await fetchMataPelajaran();
+            await renderMataPelajaranOptions();
+            await renderBahanAjarTable();
+        });
+
+        document.getElementById('cancelEdit').addEventListener('click', function() {
+            document.getElementById('bahanAjarForm').reset();
+            document.getElementById('bahanAjarForm').removeAttribute('data-id');
+            this.style.display = 'none';
+            document.getElementById('bahanAjarForm').removeEventListener('submit', updateBahanAjar);
+            document.getElementById('bahanAjarForm').addEventListener('submit', createBahanAjar);
+        });
+
+        document.getElementById('bahanAjarForm').addEventListener('submit', createBahanAjar);
+    </script>
+
+</body>
+
+</html>
