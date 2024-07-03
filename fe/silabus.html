@@ -274,91 +274,119 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1>Manajemen Silabus Mata Pelajaran</h1>
-                    <h2 id="judulFormTambah">Tambah Silabus Baru</h2>
-                    <form id="formTambahSilabus">
-                        <label for="mataPelajaran">Mata Pelajaran:</label><br>
-                        <select id="mataPelajaran" name="mataPelajaran" required>
-                            <!-- Options will be filled dynamically from API -->
-                        </select><br><br>
-                    
-                        <label for="judul">Judul:</label><br>
-                        <input type="text" id="judul" name="judul" required><br><br>
-                    
-                        <label for="deskripsi">Deskripsi:</label><br>
-                        <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea><br><br>
-                    
-                        <label for="tujuan">Tujuan:</label><br>
-                        <textarea id="tujuan" name="tujuan" rows="4" required></textarea><br><br>
-                    
-                        <label for="materi">Materi:</label><br>
-                        <textarea id="materi" name="materi" rows="4" required></textarea><br><br>
-                    
-                        <label for="metode">Metode:</label><br>
-                        <textarea id="metode" name="metode" rows="4" required></textarea><br><br>
-                    
-                        <label for="evaluasi">Evaluasi:</label><br>
-                        <textarea id="evaluasi" name="evaluasi" rows="4" required></textarea><br><br>
-                    
-                        <button type="submit">Simpan</button>
-                    </form>
-                    
+                    <h1 class="h3 mb-4 text-gray-800">Manajemen Silabus Mata Pelajaran</h1>
                 
-                    <h2>Daftar Silabus</h2>
+                    <!-- Form Tambah Silabus -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="h4 mb-4">Tambah Silabus Baru</h2>
+                            <form id="formTambahSilabus">
+                                <div class="form-group">
+                                    <label for="mataPelajaran">Mata Pelajaran:</label>
+                                    <select id="mataPelajaran" name="mataPelajaran" class="form-control" required>
+                                        <!-- Options will be filled dynamically from API -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="judul">Judul:</label>
+                                    <input type="text" id="judul" name="judul" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="deskripsi">Deskripsi:</label>
+                                    <textarea id="deskripsi" name="deskripsi" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tujuan">Tujuan:</label>
+                                    <textarea id="tujuan" name="tujuan" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="materi">Materi:</label>
+                                    <textarea id="materi" name="materi" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="metode">Metode:</label>
+                                    <textarea id="metode" name="metode" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="evaluasi">Evaluasi:</label>
+                                    <textarea id="evaluasi" name="evaluasi" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
+                            </form>
+                        </div>
+                    </div>
                 
-                    <table id="tabelSilabus">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Mata Pelajaran</th>
-                                <th>Judul</th>
-                                <th>Deskripsi</th>
-                                <th>Tujuan</th>
-                                <th>Materi</th>
-                                <th>Metode</th>
-                                <th>Evaluasi</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Data will be populated dynamically from API -->
-                        </tbody>
-                    </table>
+                    <!-- Daftar Silabus -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="h4 mb-4">Daftar Silabus</h2>
+                            <div class="table-responsive">
+                                <table id="tabelSilabus" class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Mata Pelajaran</th>
+                                            <th>Judul</th>
+                                            <th>Deskripsi</th>
+                                            <th>Tujuan</th>
+                                            <th>Materi</th>
+                                            <th>Metode</th>
+                                            <th>Evaluasi</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Data will be populated dynamically from API -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 
-                    <h2>Edit Silabus</h2>
+                    <!-- Form Edit Silabus -->
+                    <div class="card mb-4" style="display: none;">
+                        <div class="card-body">
+                            <h2 class="h4 mb-4">Edit Silabus</h2>
+                            <form id="formEditSilabus">
+                                <input type="hidden" id="idSilabus" name="idSilabus">
+                                <div class="form-group">
+                                    <label for="editMataPelajaran">Mata Pelajaran:</label>
+                                    <select id="editMataPelajaran" name="mataPelajaran" class="form-control" required>
+                                        <!-- Options will be filled dynamically from API -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="editJudul">Judul:</label>
+                                    <input type="text" id="editJudul" name="judul" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="editDeskripsi">Deskripsi:</label>
+                                    <textarea id="editDeskripsi" name="deskripsi" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="editTujuan">Tujuan:</label>
+                                    <textarea id="editTujuan" name="tujuan" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="editMateri">Materi:</label>
+                                    <textarea id="editMateri" name="materi" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="editMetode">Metode:</label>
+                                    <textarea id="editMetode" name="metode" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="editEvaluasi">Evaluasi:</label>
+                                    <textarea id="editEvaluasi" name="evaluasi" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                <button type="button" class="btn btn-secondary" onclick="cancelEdit()">Batal</button>
+                            </form>
+                        </div>
+                    </div>
                 
-                    <form id="formEditSilabus" style="display: none;">
-                        <input type="hidden" id="idSilabus" name="idSilabus">
+                </div>
                 
-                        <label for="editMataPelajaran">Mata Pelajaran:</label><br>
-                        <select id="editMataPelajaran" name="mataPelajaran" required>
-                            <!-- Options will be filled dynamically from API -->
-                        </select><br><br>
-                
-                        <label for="editJudul">Judul:</label><br>
-                        <input type="text" id="editJudul" name="judul" required><br><br>
-                
-                        <label for="editDeskripsi">Deskripsi:</label><br>
-                        <textarea id="editDeskripsi" name="deskripsi" rows="4" required></textarea><br><br>
-                
-                        <label for="editTujuan">Tujuan:</label><br>
-                        <textarea id="editTujuan" name="tujuan" rows="4" required></textarea><br><br>
-                
-                        <label for="editMateri">Materi:</label><br>
-                        <textarea id="editMateri" name="materi" rows="4" required></textarea><br><br>
-                
-                        <label for="editMetode">Metode:</label><br>
-                        <textarea id="editMetode" name="metode" rows="4" required></textarea><br><br>
-                
-                        <label for="editEvaluasi">Evaluasi:</label><br>
-                        <textarea id="editEvaluasi" name="evaluasi" rows="4" required></textarea><br><br>
-                
-                        <button type="submit">Simpan Perubahan</button>
-                        <button type="button" onclick="cancelEdit()">Batal</button>
-                    </form>
-            <!-- End of Footer -->
-
-        </div>
         <!-- End of Content Wrapper -->
 
     </div>

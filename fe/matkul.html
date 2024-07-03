@@ -274,64 +274,77 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <!-- <h1 class="h3 mb-4 text-gray-800">Blank Page</h1> -->
+                    <h1 class="h3 mb-4 text-gray-800">Manajemen Mata Pelajaran</h1>
                 
-                    <!-- Section: Prestasi Akademik -->
+                    <!-- Form Tambah Mata Pelajaran -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="h4 mb-4">Tambah Mata Pelajaran Baru</h2>
+                            <form id="formTambahMapel">
+                                <div class="form-group">
+                                    <label for="kodeMapel">Kode Mata Pelajaran:</label>
+                                    <input type="text" id="kodeMapel" name="kodeMapel" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="namaMapel">Nama Mata Pelajaran:</label>
+                                    <input type="text" id="namaMapel" name="namaMapel" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tingkat">Tingkat:</label>
+                                    <input type="text" id="tingkat" name="tingkat" class="form-control" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
+                            </form>
+                        </div>
+                    </div>
                 
-                    <!-- End Section: Prestasi Akademik -->
-                    <h1>Manajemen Mata Pelajaran</h1>
-
-    <h2>Tambah Mata Pelajaran Baru</h2>
-
-    <h2 id="judulFormTambah">Tambah Mata Pelajaran Baru</h2>
-<form id="formTambahMapel">
-    <label for="kodeMapel">Kode Mata Pelajaran:</label><br>
-    <input type="text" id="kodeMapel" name="kodeMapel" required><br><br>
-
-    <label for="namaMapel">Nama Mata Pelajaran:</label><br>
-    <input type="text" id="namaMapel" name="namaMapel" required><br><br>
-
-    <label for="tingkat">Tingkat:</label><br>
-    <input type="text" id="tingkat" name="tingkat" required><br><br>
-
-    <button type="submit">Simpan</button>
-</form>
-
-
-    <h2>Daftar Mata Pelajaran</h2>
-
-    <table id="tabelMataPelajaran">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Kode Mapel</th>
-                <th>Nama Mapel</th>
-                <th>Tingkat</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Data akan dimasukkan di sini -->
-        </tbody>
-    </table>
-
-    <h2>Edit Mata Pelajaran</h2>
-
-    <form id="formEditMapel" style="display: none;">
-        <input type="hidden" id="idMapel" name="idMapel">
-
-        <label for="editKodeMapel">Kode Mata Pelajaran:</label><br>
-        <input type="text" id="editKodeMapel" name="kodeMapel" required><br><br>
-
-        <label for="editNamaMapel">Nama Mata Pelajaran:</label><br>
-        <input type="text" id="editNamaMapel" name="namaMapel" required><br><br>
-
-        <label for="editTingkat">Tingkat:</label><br>
-        <input type="text" id="editTingkat" name="tingkat" required><br><br>
-
-        <button type="submit">Simpan Perubahan</button>
-        <button type="button" onclick="cancelEdit()">Batal</button>
-    </form>
+                    <!-- Daftar Mata Pelajaran -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="h4 mb-4">Daftar Mata Pelajaran</h2>
+                            <div class="table-responsive">
+                                <table id="tabelMataPelajaran" class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Kode Mapel</th>
+                                            <th>Nama Mapel</th>
+                                            <th>Tingkat</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Data akan dimasukkan di sini -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Form Edit Mata Pelajaran -->
+                    <div class="card mb-4" style="display: none;">
+                        <div class="card-body">
+                            <h2 class="h4 mb-4">Edit Mata Pelajaran</h2>
+                            <form id="formEditMapel">
+                                <input type="hidden" id="idMapel" name="idMapel">
+                                <div class="form-group">
+                                    <label for="editKodeMapel">Kode Mata Pelajaran:</label>
+                                    <input type="text" id="editKodeMapel" name="kodeMapel" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="editNamaMapel">Nama Mata Pelajaran:</label>
+                                    <input type="text" id="editNamaMapel" name="namaMapel" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="editTingkat">Tingkat:</label>
+                                    <input type="text" id="editTingkat" name="tingkat" class="form-control" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                <button type="button" class="btn btn-secondary" onclick="cancelEdit()">Batal</button>
+                            </form>
+                        </div>
+                    </div>
+                
                 </div>
                 
                 <!-- /.container-fluid -->

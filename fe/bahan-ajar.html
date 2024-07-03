@@ -279,7 +279,7 @@
                     <!-- Section: Prestasi Akademik -->
                     <section id="prestasi-akademik">
                         <div class="container mt-5">
-                            <h1>Create Bahan Ajar</h1>
+                            <h1 class="display-4">Create Bahan Ajar</h1>
                             <form id="bahanAjarForm" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label for="judul">Judul:</label>
@@ -305,32 +305,35 @@
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary">Create</button>
-                                    <button type="button" id="cancelEdit" class="btn btn-secondary" style="display: none;">Cancel</button>
+                                    <button type="button" id="cancelEdit" class="btn btn-secondary d-none">Cancel</button>
                                 </div>
                             </form>
-                        
-                            <h2 class="mt-5">Daftar Bahan Ajar</h2>
-                            <table class="table table-bordered" id="bahanAjarTable">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th>Judul</th>
-                                        <th>Deskripsi</th>
-                                        <th>Tipe</th>
-                                        <th>Mata Pelajaran</th>
-                                        <th>File Type</th>
-                                        <th>Preview</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- Rows will be populated here by JavaScript -->
-                                </tbody>
-                            </table>
+                
+                            <h2 class="mt-5 display-4">Daftar Bahan Ajar</h2>
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="bahanAjarTable">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Judul</th>
+                                            <th>Deskripsi</th>
+                                            <th>Tipe</th>
+                                            <th>Mata Pelajaran</th>
+                                            <th>File Type</th>
+                                            <th>Preview</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Rows will be populated here by JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </section>
                     <!-- End Section: Prestasi Akademik -->
                 
                 </div>
+                
                 
                 <!-- /.container-fluid -->
 
