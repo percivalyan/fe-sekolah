@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SekolahKu - Mata Pelajaran</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="pelajaran.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SekolahKu <sup>2</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Mata Pelajaran -->
+            <li class="nav-item">
+                <a class="nav-link" href="pelajaran.html">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Mata Pelajaran</span></a>
+            </li>
+
+            <!-- Nav Item - Bahan Ajar -->
+            <li class="nav-item">
+                <a class="nav-link" href="bahan-ajar.html">
+                    <i class="fas fa-fw fa-file-alt"></i>
+                    <span>Bahan Ajar</span></a>
+            </li>
+
+            <!-- Nav Item - Jadwal Pelajaran -->
+            <li class="nav-item">
+                <a class="nav-link" href="jadwal-pelajaran.html">
+                    <i class="fas fa-fw fa-calendar"></i>
+                    <span>Jadwal Pelajaran</span></a>
+            </li>
+
+            <!-- Nav Item - Prestasi Akademik -->
+            <li class="nav-item">
+                <a class="nav-link" href="prestasi-akademik.html">
+                    <i class="fas fa-fw fa-trophy"></i>
+                    <span>Prestasi Akademik</span></a>
+            </li>
+
+            <!-- Nav Item - Silabus -->
+            <li class="nav-item">
+                <a class="nav-link" href="silabus.html">
+                    <i class="fas fa-fw fa-list"></i>
+                    <span>Silabus</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+
+                        <!-- Nav Item - Messages -->
+           
+                        <!-- Nav Item - User Information -->
+                    
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <!-- <h1 class="h3 mb-4 text-gray-800">Blank Page</h1> -->
+                                
+                    <!-- Section: Prestasi Akademik -->
+                                
+                    <!-- End Section: Prestasi Akademik -->
+                    <h1>Manajemen Mata Pelajaran</h1>
+                
+                    <h2 id="judulFormTambah">Tambah Mata Pelajaran Baru</h2>
+                    <form id="formTambahMapel" class="mb-4">
+                        <div class="mb-3">
+                            <label for="kodeMapel" class="form-label">Kode Mata Pelajaran:</label>
+                            <input type="text" id="kodeMapel" name="kodeMapel" class="form-control" required>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="namaMapel" class="form-label">Nama Mata Pelajaran:</label>
+                            <input type="text" id="namaMapel" name="namaMapel" class="form-control" required>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="tingkat" class="form-label">Tingkat:</label>
+                            <input type="text" id="tingkat" name="tingkat" class="form-control" required>
+                        </div>
+                
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                    </form>
+                
+                    <h2>Daftar Mata Pelajaran</h2>
+                
+                    <table id="tabelMataPelajaran" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <!-- <th>ID</th> -->
+                                <th>Kode Mapel</th>
+                                <th>Nama Mapel</th>
+                                <th>Tingkat</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data akan dimasukkan di sini -->
+                        </tbody>
+                    </table>
+                
+                    <form id="formEditMapel" style="display: none;" class="mb-4">
+                        <input type="hidden" id="idMapel" name="idMapel">
+                
+                        <div class="mb-3">
+                            <label for="editKodeMapel" class="form-label">Kode Mata Pelajaran:</label>
+                            <input type="text" id="editKodeMapel" name="kodeMapel" class="form-control" required>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="editNamaMapel" class="form-label">Nama Mata Pelajaran:</label>
+                            <input type="text" id="editNamaMapel" name="namaMapel" class="form-control" required>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="editTingkat" class="form-label">Tingkat:</label>
+                            <input type="text" id="editTingkat" name="tingkat" class="form-control" required>
+                        </div>
+                
+                        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                        <button type="button" class="btn btn-secondary" onclick="cancelEdit()">Batal</button>
+                    </form>
+                </div>
+                
+                
+                <!-- /.container-fluid -->
+
+    
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <!-- <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer> -->
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <script>
+                 async function fetchMataPelajaran() {
+            const response = await fetch('http://localhost:8080/api/mata-pelajaran');
+            const data = await response.json();
+            return data;
+        }
+//      <td>${mataPelajaran.id}</td>
+async function renderMataPelajaran() {
+    const mataPelajaranList = await fetchMataPelajaran();
+    const tbody = document.querySelector('#tabelMataPelajaran tbody');
+
+    tbody.innerHTML = ''; // Bersihkan isi tbody sebelumnya
+
+    mataPelajaranList.forEach(mataPelajaran => {
+        const row = tbody.insertRow();
+        row.insertCell(0).textContent = mataPelajaran.kodeMapel;
+        row.insertCell(1).textContent = mataPelajaran.namaMapel;
+        row.insertCell(2).textContent = mataPelajaran.tingkat;
+        
+        const aksiCell = row.insertCell(3);
+        const editButton = createButton("Edit", "btn-warning", () => fillFormEdit(mataPelajaran.id));
+        const deleteButton = createButton("Delete", "btn-danger", () => confirmDelete(mataPelajaran.id));
+        aksiCell.appendChild(editButton);
+        aksiCell.appendChild(deleteButton);
+    });
+}
+
+// Helper function to create buttons
+function createButton(text, className, onClick) {
+    const button = document.createElement("button");
+    button.textContent = text;
+    button.className = `btn ${className} btn-sm mr-2`;
+    button.onclick = onClick;
+    return button;
+}
+
+
+        async function fillFormEdit(id) {
+    const mataPelajaran = await getMataPelajaranById(id);
+
+    document.getElementById('idMapel').value = mataPelajaran.id;
+    document.getElementById('editKodeMapel').value = mataPelajaran.kodeMapel;
+    document.getElementById('editNamaMapel').value = mataPelajaran.namaMapel;
+    document.getElementById('editTingkat').value = mataPelajaran.tingkat;
+
+    // Sematkan judul untuk form edit dan sembunyikan form tambah
+    document.getElementById('judulFormTambah').style.display = 'none';
+    document.getElementById('formTambahMapel').style.display = 'none';
+
+    // Tampilkan form edit
+    document.getElementById('formEditMapel').style.display = 'block';
+    document.getElementById('tabelMataPelajaran').style.display = 'none';
+}
+
+async function cancelEdit() {
+    // Reset form edit dan tampilkan kembali tabel
+    document.getElementById('formEditMapel').reset();
+    document.getElementById('formEditMapel').style.display = 'none';
+    document.getElementById('tabelMataPelajaran').style.display = 'block';
+
+    // Tampilkan kembali form tambah
+    document.getElementById('judulFormTambah').style.display = 'block';
+    document.getElementById('formTambahMapel').style.display = 'block';
+}
+
+
+        async function editMataPelajaran(event) {
+            event.preventDefault();
+
+            const id = document.getElementById('idMapel').value;
+            const kodeMapel = document.getElementById('editKodeMapel').value;
+            const namaMapel = document.getElementById('editNamaMapel').value;
+            const tingkat = document.getElementById('editTingkat').value;
+
+            const data = {
+                id: parseInt(id),
+                kodeMapel: kodeMapel,
+                namaMapel: namaMapel,
+                tingkat: tingkat
+            };
+
+            const response = await fetch(`http://localhost:8080/api/mata-pelajaran/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                alert('Data mata pelajaran berhasil diperbarui!');
+                // Kosongkan form dan tampilkan kembali tabel setelah berhasil
+                document.getElementById('formEditMapel').reset();
+                document.getElementById('formEditMapel').style.display = 'none';
+                document.getElementById('tabelMataPelajaran').style.display = 'block';
+
+                // Refresh tabel setelah update
+                renderMataPelajaran();
+            } else {
+                alert('Gagal memperbarui data mata pelajaran.');
+            }
+        }
+
+        async function confirmDelete(id) {
+            if (confirm('Anda yakin ingin menghapus data mata pelajaran ini?')) {
+                const response = await fetch(`http://localhost:8080/api/mata-pelajaran/${id}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    alert('Data mata pelajaran berhasil dihapus!');
+                    // Refresh tabel setelah hapus
+                    renderMataPelajaran();
+                } else {
+                    alert('Gagal menghapus data mata pelajaran.');
+                }
+            }
+        }
+
+        // Fungsi untuk mendapatkan data mata pelajaran berdasarkan ID
+        async function getMataPelajaranById(id) {
+            const response = await fetch(`http://localhost:8080/api/mata-pelajaran/${id}`);
+            const data = await response.json();
+            return data;
+        }
+
+        // Event listener untuk form edit mata pelajaran
+        document.getElementById('formEditMapel').addEventListener('submit', editMataPelajaran);
+
+        // Event listener untuk form tambah mata pelajaran
+        document.getElementById('formTambahMapel').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const kodeMapel = document.getElementById('kodeMapel').value;
+            const namaMapel = document.getElementById('namaMapel').value;
+            const tingkat = document.getElementById('tingkat').value;
+
+            const data = {
+                kodeMapel: kodeMapel,
+                namaMapel: namaMapel,
+                tingkat: tingkat
+            };
+
+            const response = await fetch('http://localhost:8080/api/mata-pelajaran', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                alert('Data mata pelajaran berhasil disimpan!');
+                // Clear form fields after successful submission
+                document.getElementById('formTambahMapel').reset();
+
+                // Refresh tabel setelah tambah data
+                renderMataPelajaran();
+            } else {
+                alert('Gagal menyimpan data mata pelajaran.');
+            }
+        });
+
+        // Panggil fungsi renderMataPelajaran untuk memuat data saat halaman dimuat
+        renderMataPelajaran();
+    </script>
+
+</body>
+
+</html>

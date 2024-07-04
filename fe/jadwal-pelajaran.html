@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SekolahKu - Jadwal Pelajaran</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="pelajaran.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SekolahKu <sup>2</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Mata Pelajaran -->
+            <li class="nav-item">
+                <a class="nav-link" href="pelajaran.html">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Mata Pelajaran</span></a>
+            </li>
+
+            <!-- Nav Item - Bahan Ajar -->
+            <li class="nav-item">
+                <a class="nav-link" href="bahan-ajar.html">
+                    <i class="fas fa-fw fa-file-alt"></i>
+                    <span>Bahan Ajar</span></a>
+            </li>
+
+            <!-- Nav Item - Jadwal Pelajaran -->
+            <li class="nav-item">
+                <a class="nav-link" href="jadwal-pelajaran.html">
+                    <i class="fas fa-fw fa-calendar"></i>
+                    <span>Jadwal Pelajaran</span></a>
+            </li>
+
+            <!-- Nav Item - Prestasi Akademik -->
+            <li class="nav-item">
+                <a class="nav-link" href="prestasi-akademik.html">
+                    <i class="fas fa-fw fa-trophy"></i>
+                    <span>Prestasi Akademik</span></a>
+            </li>
+
+            <!-- Nav Item - Silabus -->
+            <li class="nav-item">
+                <a class="nav-link" href="silabus.html">
+                    <i class="fas fa-fw fa-list"></i>
+                    <span>Silabus</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+
+                        <!-- Nav Item - Messages -->
+           
+                        <!-- Nav Item - User Information -->
+                    
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                  
+              
+                        <h1 class="mb-4">Manajemen Jadwal Pelajaran</h1>
+                
+                        <h2 class="mb-4">Tambah Jadwal Pelajaran</h2>
+                        <form id="form-tambah">
+                            <div class="form-group">
+                                <label for="mataPelajaran">Mata Pelajaran:</label>
+                                <select class="form-control" id="mataPelajaran" name="mataPelajaran" required></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guru">Guru:</label>
+                                <input type="text" class="form-control" id="guru" name="guru" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="kelas">Kelas:</label>
+                                <input type="text" class="form-control" id="kelas" name="kelas" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="hari">Hari:</label>
+                                <select class="form-control" id="hari" name="hari" required>
+                                    <option value="SENIN">Senin</option>
+                                    <option value="SELASA">Selasa</option>
+                                    <option value="RABU">Rabu</option>
+                                    <option value="KAMIS">Kamis</option>
+                                    <option value="JUMAT">Jumat</option>
+                                    <option value="SABTU">Sabtu</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="jamMulai">Jam Mulai:</label>
+                                <input type="number" class="form-control" id="jamMulai" name="jamMulai" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="jamSelesai">Jam Selesai:</label>
+                                <input type="number" class="form-control" id="jamSelesai" name="jamSelesai" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Tambah Jadwal</button>
+                        </form>
+                
+                        <h2 class="mt-5 mb-4">Daftar Jadwal Pelajaran</h2>
+                        <table class="table table-bordered" id="tabel-jadwal">
+                            <thead>
+                                <tr>
+                                    <!-- <th>ID</th> -->
+                                    <th>Mata Pelajaran</th>
+                                    <th>Guru</th>
+                                    <th>Kelas</th>
+                                    <th>Hari</th>
+                                    <th>Jam Mulai</th>
+                                    <th>Jam Selesai</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Data akan dimuat di sini -->
+                            </tbody>
+                        </table>
+        
+
+                </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <!-- <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer> -->
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+   <script>
+    $(document).ready(function() {
+        const apiUrl = "http://localhost:8080/api/jadwal-pelajaran";
+
+        function loadJadwal() {
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const tabelJadwal = document.getElementById("tabel-jadwal").getElementsByTagName("tbody")[0];
+                    tabelJadwal.innerHTML = "";
+                    data.forEach(jadwal => {
+                        const row = tabelJadwal.insertRow();
+                        row.insertCell(0).textContent = jadwal.id;
+                        row.insertCell(1).textContent = jadwal.mataPelajaran.map(mp => mp.namaMapel).join(', ');
+                        row.insertCell(2).textContent = jadwal.idGuru;
+                        row.insertCell(3).textContent = jadwal.idKelas;
+                        row.insertCell(4).textContent = jadwal.hari;
+                        row.insertCell(5).textContent = jadwal.jamMulai + ' WIB';
+                        row.insertCell(6).textContent = jadwal.jamSelesai + ' WIB';
+
+                        // Aksi Edit
+                        const editButton = document.createElement("button");
+                        editButton.className = "btn btn-primary btn-sm mr-2";
+                        editButton.textContent = "Edit";
+                        editButton.onclick = () => editJadwal(jadwal.id);
+                        row.insertCell(7).appendChild(editButton);
+
+                        // Aksi Delete
+                        const deleteButton = document.createElement("button");
+                        deleteButton.className = "btn btn-danger btn-sm";
+                        deleteButton.textContent = "Delete";
+                        deleteButton.onclick = () => deleteJadwal(jadwal.id);
+                        row.insertCell(7).appendChild(deleteButton);
+                    });
+                })
+                .catch(error => console.error("Error fetching data:", error));
+        }
+
+        loadJadwal();
+
+        async function fetchMataPelajaran() {
+            const response = await fetch('http://localhost:8080/api/mata-pelajaran');
+            const data = await response.json();
+            return data;
+        }
+
+        async function renderMataPelajaranOptions(selectId) {
+            const mataPelajaranList = await fetchMataPelajaran();
+            const select = document.getElementById(selectId);
+            select.innerHTML = '';
+            mataPelajaranList.forEach(mp => {
+                const option = document.createElement('option');
+                option.value = mp.id;
+                option.textContent = mp.namaMapel;
+                select.appendChild(option);
+            });
+        }
+
+        renderMataPelajaranOptions('mataPelajaran');
+
+        document.getElementById("form-tambah").addEventListener("submit", addJadwal);
+
+        function addJadwal(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = {
+                mataPelajaran: [{ id: formData.get("mataPelajaran") }],
+                idGuru: formData.get("guru"),
+                idKelas: formData.get("kelas"),
+                hari: formData.get("hari"),
+                jamMulai: formData.get("jamMulai"),
+                jamSelesai: formData.get("jamSelesai")
+            };
+
+            fetch(apiUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById("form-tambah").reset();
+                loadJadwal();
+            })
+            .catch(error => console.error("Error adding jadwal:", error));
+        }
+
+        function deleteJadwal(id) {
+            fetch(`${apiUrl}/${id}`, {
+                method: "DELETE",
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                loadJadwal();
+            })
+            .catch(error => console.error("Error deleting jadwal:", error));
+        }
+
+        function editJadwal(id) {
+            fetch(`${apiUrl}/${id}`)
+                .then(response => response.json())
+                .then(jadwal => {
+                    document.getElementById("mataPelajaran").value = jadwal.mataPelajaran[0].id;
+                    document.getElementById("guru").value = jadwal.idGuru;
+                    document.getElementById("kelas").value = jadwal.idKelas;
+                    document.getElementById("hari").value = jadwal.hari;
+                    document.getElementById("jamMulai").value = jadwal.jamMulai;
+                    document.getElementById("jamSelesai").value = jadwal.jamSelesai;
+
+                    const submitButton = document.querySelector("#form-tambah button[type='submit']");
+                    submitButton.textContent = "Simpan Perubahan";
+
+                    document.getElementById("form-tambah").onsubmit = (event) => updateJadwal(event, id);
+                })
+                .catch(error => console.error("Error fetching jadwal:", error));
+        }
+
+        function updateJadwal(event, id) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = {
+                mataPelajaran: [{ id: formData.get("mataPelajaran") }],
+                idGuru: formData.get("guru"),
+                idKelas: formData.get("kelas"),
+                hari: formData.get("hari"),
+                jamMulai: formData.get("jamMulai"),
+                jamSelesai: formData.get("jamSelesai")
+            };
+
+            fetch(`${apiUrl}/${id}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById("form-tambah").reset();
+                document.querySelector("#form-tambah button[type='submit']").textContent = "Tambah Jadwal";
+                document.getElementById("form-tambah").onsubmit = addJadwal;
+                loadJadwal();
+            })
+            .catch(error => console.error("Error updating jadwal:", error));
+        }
+    });
+    </script>
+</body>
+
+</html>
